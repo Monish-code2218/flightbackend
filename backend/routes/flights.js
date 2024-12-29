@@ -1,5 +1,5 @@
 const router = require("express").Router();
-let Flight = require("../models/Flight");
+let Flight = require("../models/flight");
 const stripe = require('stripe')(process.env.STRIPE_SECRET);
 require('dotenv').config();
 
