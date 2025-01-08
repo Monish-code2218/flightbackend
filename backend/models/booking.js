@@ -5,12 +5,13 @@ const Schema = mongoose.Schema;
 var bookingSchema = new Schema({
   bookingId: { type: String, required: true },
   user: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "UserDetail",
+    type: String,
+    required: true,
+   
   },
   flight: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Flight",
+    type: String,
+    required: true,
   },
 });
 
